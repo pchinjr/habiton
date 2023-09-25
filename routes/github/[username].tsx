@@ -1,6 +1,6 @@
 import { Handlers, PageProps } from "https://deno.land/x/fresh@1.4.3/server.ts";
 import { Head } from "https://deno.land/x/fresh@1.4.3/runtime.ts";
-import { Header } from "../../components/Header.tsx";
+import { Nav } from "../../components/Nav.tsx";
 
 interface User {
   login: string;
@@ -30,7 +30,7 @@ export default function Page({ data }: PageProps<User | null>) {
       <Head>
         <title>praise-cage-ai</title>
       </Head>
-      <Header active="true" />
+      <Nav active="true" />
       <div class="px-4 py-8 mx-auto bg-[#86efac]">
         <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
           <h1 class="text-4xl font-bold">Praise Cage</h1>

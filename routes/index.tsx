@@ -1,6 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
+import { Nav } from "../components/Nav.tsx";
 import { useSignal } from "@preact/signals";
-import { Header } from "../components/Header.tsx";
 import Counter from "../islands/Counter.tsx";
 
 export default function Home() {
@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>praise-cage-ai</title>
+        <title>Habiton</title>
       </Head>
-      <Header active="" />
+      <Nav active="" />
       <div class="px-4 py-8 mx-auto bg-[#86efac]">
         <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
           <img

@@ -1,6 +1,6 @@
 import { Handlers, PageProps } from "https://deno.land/x/fresh@1.3.1/server.ts";
 import { Head } from "$fresh/runtime.ts";
-import { Header } from "../../components/Header.tsx";
+import { Nav } from "../../components/Nav.tsx";
 
 interface Apod {
   date: string;
@@ -27,7 +27,7 @@ export default function ApodPage({ data }: PageProps<Apod>) {
       <Head>
         <title>praise-cage-ai</title>
       </Head>
-      <Header active="true" />
+      <Nav active="true" />
       <div class="px-4 py-8 mx-auto bg-[#86efac]">
         <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
           <h1 class="text-4xl font-bold">NASA APOD - {data.date}</h1>
